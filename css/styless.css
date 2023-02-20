@@ -124,6 +124,8 @@ footer div p {
 .btn_tecnico{
   width: auto;
   height: auto;
+  max-width: 30vw;
+  max-height: 15vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,6 +142,7 @@ footer div p {
 
  @media screen and (max-width: 728px) {
   .btn_tecnico{
+    max-width: 45vw;
     width: 45vw;
     height: 10vh;
   }
@@ -277,6 +280,8 @@ footer div p {
 
 .btn_instructivo{
   width: auto;
+  min-width: 30vw;
+  min-height: 12vw;
   height: auto;
   display: flex;
   justify-content: center;
