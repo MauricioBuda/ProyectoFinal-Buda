@@ -16,6 +16,11 @@ const vaciarContenedorProductosParaFiltrar = document.getElementById("contenedor
 let carrito = []
 let contadorElementos = 0
 
+fetch ('/js/prod.json')
+.then((resp)=> resp.json())
+.then((content)=>(console.log(content)))
+.catch((err)=>console.log("Hay un error!", err))
+
 
 //Cuando carga la pagina, levanto del Storage el carrito y el contador de elementos
 document.addEventListener('DOMContentLoaded', () => {
